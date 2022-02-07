@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2c832f16-c91f-4f5b-b941-ddfcca64a052": {
+      "ProjectGuid": "2c832f16-c91f-4f5b-b941-ddfcca64a052",
+      "DisplayName": "WarrantyManager",
+      "ColorIndex": 0
+    },
+    "03aff354-0206-466c-be73-ecf1c8db6d14": {
+      "ProjectGuid": "03aff354-0206-466c-be73-ecf1c8db6d14",
+      "DisplayName": "WarrantyManagerWeb",
+      "ColorIndex": 1
+    },
+    "acd5b573-8bd3-4950-b28c-b88d374c3788": {
+      "ProjectGuid": "acd5b573-8bd3-4950-b28c-b88d374c3788",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

@@ -1,0 +1,46 @@
+<div class="container-fluid h-100 mt-5">
+
+  <mat-accordion class="mt-2">
+   
+    <mat-expansion-panel
+      *ngFor="let customer of customers;  let i = index;"
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <span class="material-icons me-2">
+            person
+          </span> {{customer.name}}
+        </mat-panel-title>
+        <mat-panel-description>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <table class="table table-sm table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Product Name</th>
+            <th scope="col">Serial Number</th>
+            <th scope="col">Purchase Date</th>
+            <th scope="col">Warranty End Date</th>
+            <th scope="col">Is Warrantied</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let warranty of customer.warranties">
+            <td>{{warranty.productName}}</td>
+            <td>{{warranty.serialNumber}}</td>
+            <td>{{warranty.purchaseDate}}</td>
+            <td>{{warranty.warrantyEndDate}}</td>
+            <td>{{warranty.isWarrantied}}</td>
+            <td>
+              <button (click)="selectWarranty(warranty)">View Warranty</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </mat-expansion-panel>
+  </mat-accordion>
+
+</div>
